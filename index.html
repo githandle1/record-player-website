@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Record Player</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Vinyl Record Player</h1>
+        
+        <div class="record-player">
+            <div class="turntable">
+                <div class="record" id="record">
+                    <div class="record-center"></div>
+                    <div class="record-lines">
+                        <div class="line"></div>
+                        <div class="line"></div>
+                        <div class="line"></div>
+                        <div class="line"></div>
+                    </div>
+                </div>
+                <div class="tonearm-container">
+                    <div class="tonearm" id="tonearm">
+                        <div class="tonearm-pivot"></div>
+                        <div class="tonearm-body"></div>
+                        <div class="tonearm-head">
+                            <div class="needle"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="controls">
+                <button class="control-btn" id="playPauseBtn">
+                    <span class="play-icon">▶</span>
+                    <span class="pause-icon">⏸</span>
+                </button>
+                <div class="volume-control">
+                    <label for="volume">Volume</label>
+                    <input type="range" id="volume" min="0" max="100" value="50">
+                    <span id="volumeValue">50%</span>
+                </div>
+            </div>
+            
+            <div class="info">
+                <div class="track-info">
+                    <div class="track-title">Now Playing</div>
+                    <div class="track-name" id="trackName">Select a track to play</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
